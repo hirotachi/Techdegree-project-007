@@ -11,10 +11,75 @@
 <body>
     <header class="main-header">
         <h1 class="logo">Your <span>App &trade;</span></h1>
-        <svg class="icon">
-                <use xlink:href="icons/test.svg#icon-bell" />
+        <svg class="icon-bell">
+            <use xlink:href="icons/test.svg#icon-bell" />
         </svg>
-
+        <div class="user">
+            <p class="user_name">Josh Sullivan</p>
+            <img class="user_picture" src="images/member-2.jpg" alt="memeber picture">
+        </div>
     </header>
+
+    <div class="sidebar">
+        <svg class="icon-dashboard">
+            <use xlink:href="icons/test.svg#icon-dashboard">
+        </svg>
+        <svg class="icon-members">
+                <use xlink:href="icons/test.svg#icon-members">
+        </svg>
+        <svg class="icon-visits">
+                <use xlink:href="icons/test.svg#icon-visits">
+        </svg>
+        <svg class="icon-settings">
+                <use xlink:href="icons/test.svg#icon-settings">
+        </svg>
+    </div>
+
+    <main class="content">
+        <div class="content_search">
+            <input type="text" name="search" id="search" placeholder="search">
+        </div>
+
+        <div class="content_dashboard">
+            <div class="alert">
+                <p class="alert_message">
+                    <span>Alert</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, impedit.
+                </p>
+            </div>
+        </div>
+
+        <div class="traffic">
+            <span>Traffic</span>
+            <ul class="filter">
+                <li class="filter_button">Hourly</li>
+                <li class="filter_button">Daily</li>
+                <li class="filter_button">Weekly</li>
+                <li class="filter_button">Monthly</li>
+            </ul>
+            <div class="graph">
+                <!-- graph placer -->
+            </div>
+        </div>
+
+        <div class="chart">
+            <div class="chart-column">
+                <span>Daily Traffic</span>
+                <!-- column chart going in here -->
+            </div>
+
+            <div class="chart-doughnut">
+                <span>Mobile Users</span>
+                <!-- doughnut chart goes in here -->
+                <ul class="color-def">
+                    <li class="phones">Phones</li>
+                    <li class="tablets">Tablets</li>
+                    <li class="desktops">Desktopss</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </main>
 </body>
 </html>
