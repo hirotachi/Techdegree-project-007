@@ -1,4 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+.icon-bell {
+  width: 2rem;
+  fill: #fff;
+  height: 2rem;
+  margin: auto 0;
+  margin-right: 1rem; }
+  @media (min-width: 769px) {
+    .icon-bell {
+      width: 1.5rem; } }
+
 .ct-label {
   fill: rgba(0, 0, 0, 0.4);
   color: rgba(0, 0, 0, 0.4);
@@ -675,7 +685,8 @@
 
 body {
   margin: 0;
-  font-family: Montserrat , sans-serif; }
+  font-family: Montserrat , sans-serif;
+  text-align: center; }
 
 ul {
   list-style: none; }
@@ -705,18 +716,8 @@ img {
   .logo span {
     font-weight: 100; }
 
-.icon-bell {
-  width: 2rem;
-  fill: #fff;
-  height: 2rem;
-  margin: auto 0;
-  margin-right: 1rem; }
-  @media (min-width: 769px) {
-    .icon-bell {
-      width: 1.5rem; } }
-
 .user {
-  border-left: 1px solid #777;
+  border-left: 1px solid #a7a7a7;
   width: 50px;
   padding: auto 1rem; }
   @media (min-width: 769px) {
@@ -753,3 +754,39 @@ img {
     .sidebar svg:active {
       fill: #96e2ae;
       transform: scale(1.3); }
+
+.content_search {
+  background-color: #eee;
+  position: relative;
+  padding: .5rem;
+  color: #a7a7a7; }
+  .content_search input {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px; }
+    .content_search input:focus {
+      outline: none; }
+    .content_search input::placeholder {
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: #a7a7a7; }
+    @media (min-width: 769px) {
+      .content_search input {
+        width: 40%;
+        margin-right: 3rem; } }
+  .content_search .fas {
+    position: absolute;
+    top: 35%;
+    right: 2rem; }
+    @media (min-width: 769px) {
+      .content_search .fas {
+        right: 5rem; } }
+  @media (min-width: 769px) {
+    .content_search {
+      float: right;
+      width: 80%;
+      border: 1px solid #a7a7a7;
+      border-radius: 5px;
+      text-align: right; } }
