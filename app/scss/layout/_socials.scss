@@ -1,0 +1,53 @@
+.social{
+
+  &-stats{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    div{
+      flex: 1 40%;
+      padding: 1rem;
+      background-color: $color-social-bg;
+      border: 1px solid $color-grey;
+      @media (min-width: 769px) {
+        width: 30%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        margin: 1rem;
+      }
+      svg{
+        height: 4rem;
+        width: 4rem;
+        fill: $color-white;
+        stroke: $color-primary;
+        background-color: $color-primary-dark;
+        border-radius: 35px;
+        padding: 1rem;
+        @media(min-width: 769px){
+          width: 6rem;
+          height: 5rem;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+
+  &-info{
+    width: 100%;
+    text-align: center;
+    &-brand{
+      display: block;
+      color: $color-primary;
+    }
+    &-numbers{
+      display: block;
+      font-size: 1.5rem;
+      color: $color-dark-grey;
+      @media(min-width: 769px){
+        font-size: 3rem;
+      }
+    }
+  }
+
+}
