@@ -740,3 +740,16 @@ img {
         width: 2rem;
         height: 2rem;
         margin-left: 20px; } }
+
+.sidebar {
+  background-color: #5a3a94;
+  display: flex;
+  justify-content: space-around; }
+  .sidebar svg {
+    fill: #fff;
+    width: 3rem;
+    height: 3rem;
+    padding: .7rem 1rem; }
+    .sidebar svg:active {
+      fill: #96e2ae;
+      transform: scale(1.3); }

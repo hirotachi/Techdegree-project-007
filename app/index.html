@@ -6,18 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header class="main-header">
-        <h1 class="logo">Your <span>App &trade;</span></h1>
-        <svg class="icon-bell">
-            <use xlink:href="icons/test.svg#icon-bell" />
-        </svg>
-        <div class="user">
-            <p class="user_name">Josh Sullivan</p>
-            <img class="user_picture" src="images/member-2.jpg" alt="memeber picture">
-        </div>
+    <h1 class="logo">Your <span>App &trade;</span></h1>
+    <svg class="icon-bell">
+        <use xlink:href="icons/test.svg#icon-bell" />
+    </svg>
+    <div class="user">
+        <p class="user_name">Josh Sullivan</p>
+        <img class="user_picture" src="images/member-2.jpg" alt="memeber picture">
+    </div>
 </header>
 
 <div class="sidebar">
@@ -39,171 +40,173 @@
     <div class="content_search">
         <input type="text" name="search" id="search" placeholder="search">
     </div>
-
-    <div class="content_dashboard">
-        <div class="alert">
-            <p class="alert_message">
-                <span>Alert</span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, impedit.
-            </p>
-        </div>
-    </div>
-
-    <div class="traffic">
-        <span class="section-title">Traffic</span>
-        <ul class="filter">
-            <li class="filter_button">Hourly</li>
-            <li class="filter_button">Daily</li>
-            <li class="filter_button">Weekly</li>
-            <li class="filter_button">Monthly</li>
-        </ul>
-        <div class="graph">
-            <div class="ct-chart ct-perfect-fourth"></div>
-        </div>
-    </div>
-
-    <div class="chart">
-        <div class="chart-column">
-            <span class="section-title">Daily Traffic</span>
-            <!-- column chart going in here -->
+    <div class="dashboard">
+        <p class="dashboard-title">Dashboard</p>
+        <div class="content_dashboard">
+            <div class="alert">
+                <p class="alert_message">
+                    <span>Alert</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, impedit.
+                </p>
+            </div>
         </div>
 
-        <div class="chart-doughnut">
-            <span>Mobile Users</span>
-            <!-- doughnut chart goes in here -->
-            <ul class="color-def">
-                <li class="phones">Phones</li>
-                <li class="tablets">Tablets</li>
-                <li class="desktops">Desktopss</li>
+        <div class="traffic">
+            <span class="section-title">Traffic</span>
+            <ul class="filter">
+                <li class="filter_button">Hourly</li>
+                <li class="filter_button">Daily</li>
+                <li class="filter_button">Weekly</li>
+                <li class="filter_button">Monthly</li>
             </ul>
+            <div class="graph">
+                <div class="ct-chart ct-perfect-fourth"></div>
+            </div>
         </div>
-    </div>
 
-    <div class="social">
-        <span class="section-title">Social stats</span>
-        <div class="social-twitter">
-            <svg class="icon-twitter">
-                <use xlink:href="icons/test.svg#icon-twitter">
-            </svg>
-            <p class="social-info">
-                <span class="social-brand">twitter</span>
-                10,345
-            </p>
-        </div>
-        <div class="social-facebook">
-            <svg class="icon-facebook">
-                <use xlink:href="icons/test.svg#icon-facebook">
-            </svg>
-            <p class="social-info">
-                <span class="social-brand">facebook</span>
-                8,739
-            </p>
-        </div>
-        <div class="social-google">
-            <svg class="icon-google">
-                <use xlink:href="icons/test.svg#icon-google-plus">
-            </svg>
-            <p class="social-info">
-                <span class="social-brand">Google+</span>
-                2,530
-            </p>
-        </div>
-    </div>
+        <div class="chart">
+            <div class="chart-column">
+                <span class="section-title">Daily Traffic</span>
+                <!-- column chart going in here -->
+            </div>
 
-    <div class="members">
-        <span class="section-title">new members</span>
-        <div class="member">
-            <img src="images/member-1.jpg" alt="member image" class="member-img">
-            <p class="member-name">Victoria Chambers</p>
-            <a href="#" class="member-email">victoriachambers@example.com</a>
-            <span class="member-date">10/15/2015</span>
+            <div class="chart-doughnut">
+                <span>Mobile Users</span>
+                <!-- doughnut chart goes in here -->
+                <ul class="color-def">
+                    <li class="phones">Phones</li>
+                    <li class="tablets">Tablets</li>
+                    <li class="desktops">Desktopss</li>
+                </ul>
+            </div>
         </div>
-        <div class="member">
-            <img src="images/member-2.jpg" alt="member image" class="member-img">
-            <p class="member-name">Dale byrd</p>
-            <a href="#" class="member-email">dalebyrd@example.com</a>
-            <span class="member-date">10/15/2015</span>
-        </div>
-        <div class="member">
-            <img src="images/member-3.jpg" alt="member image" class="member-img">
-            <p class="member-name">Dawn wood</p>
-            <a href="#" class="member-email">dawnwood@example.com</a>
-            <span class="member-date">10/15/2015</span>
-        </div>
-        <div class="member">
-            <img src="images/member-4.jpg" alt="member image" class="member-img">
-            <p class="member-name">dan oliver</p>
-            <a href="#" class="member-email">dan oliver@example.com</a>
-            <span class="member-date">10/15/2015</span>
-        </div>
-    </div>
 
-    <div class="activities">
-        <span class="section-title">recent activity</span>
-        <div class="activity">
-            <img src="images/member-1.jpg" alt="member image" class="member-img">
-            <p class="activity-info">
-                Victoria Chambers commented on YourApp's SEO Tips
-            </p>
-            <span class="activity-time">4 hours ago</span>
-            <!-- activity arrow icon goes here -->
+        <div class="social">
+            <span class="section-title">Social stats</span>
+            <div class="social-twitter">
+                <svg class="icon-twitter">
+                    <use xlink:href="icons/test.svg#icon-twitter">
+                </svg>
+                <p class="social-info">
+                    <span class="social-brand">twitter</span>
+                    10,345
+                </p>
+            </div>
+            <div class="social-facebook">
+                <svg class="icon-facebook">
+                    <use xlink:href="icons/test.svg#icon-facebook">
+                </svg>
+                <p class="social-info">
+                    <span class="social-brand">facebook</span>
+                    8,739
+                </p>
+            </div>
+            <div class="social-google">
+                <svg class="icon-google">
+                    <use xlink:href="icons/test.svg#icon-google-plus">
+                </svg>
+                <p class="social-info">
+                    <span class="social-brand">Google+</span>
+                    2,530
+                </p>
+            </div>
         </div>
-        <div class="activity">
-            <img src="images/member-2.jpg" alt="member image" class="member-img">
-            <p class="activity-info">
-                Dale byrd like the post facebook's Changes for 2016
-            </p>
-            <span class="activity-time">5 hours ago</span>
-            <!-- activity arrow icon goes here -->
-        </div>
-        <div class="activity">
-            <img src="images/member-3.jpg" alt="member image" class="member-img">
-            <p class="activity-info">
-                Dawn Wood commented on Facebook's Changes for 2016
-            </p>
-            <span class="activity-time">5 hours ago</span>
-            <!-- activity arrow icon goes here -->
-        </div>
-        <div class="activity">
-            <img src="images/member-4.jpg" alt="member image" class="member-img">
-            <p class="activity-info">
-                Dan Oliver posted YourApp's SEO Tips
-            </p>
-            <span class="activity-time">1 day ago</span>
-            <!-- activity arrow icon goes here -->
-        </div>
-    </div>
 
-    <div class="message">
-        <span class="section-title">Message User</span>
-        <div class="message-form">
-            <form action="#">
-                <input type="text" class="user-search" placeholder="Search for User">
-                <textarea name="user_message" class="user-message" placeholder="Message for User"></textarea>
-                <input class="btn btn-default" type="button" value="Send">
+        <div class="members">
+            <span class="section-title">new members</span>
+            <div class="member">
+                <img src="images/member-1.jpg" alt="member image" class="member-img">
+                <p class="member-name">Victoria Chambers</p>
+                <a href="#" class="member-email">victoriachambers@example.com</a>
+                <span class="member-date">10/15/2015</span>
+            </div>
+            <div class="member">
+                <img src="images/member-2.jpg" alt="member image" class="member-img">
+                <p class="member-name">Dale byrd</p>
+                <a href="#" class="member-email">dalebyrd@example.com</a>
+                <span class="member-date">10/15/2015</span>
+            </div>
+            <div class="member">
+                <img src="images/member-3.jpg" alt="member image" class="member-img">
+                <p class="member-name">Dawn wood</p>
+                <a href="#" class="member-email">dawnwood@example.com</a>
+                <span class="member-date">10/15/2015</span>
+            </div>
+            <div class="member">
+                <img src="images/member-4.jpg" alt="member image" class="member-img">
+                <p class="member-name">dan oliver</p>
+                <a href="#" class="member-email">dan oliver@example.com</a>
+                <span class="member-date">10/15/2015</span>
+            </div>
+        </div>
+
+        <div class="activities">
+            <span class="section-title">recent activity</span>
+            <div class="activity">
+                <img src="images/member-1.jpg" alt="member image" class="member-img">
+                <p class="activity-info">
+                    Victoria Chambers commented on YourApp's SEO Tips
+                </p>
+                <span class="activity-time">4 hours ago</span>
+                <!-- activity arrow icon goes here -->
+            </div>
+            <div class="activity">
+                <img src="images/member-2.jpg" alt="member image" class="member-img">
+                <p class="activity-info">
+                    Dale byrd like the post facebook's Changes for 2016
+                </p>
+                <span class="activity-time">5 hours ago</span>
+                <!-- activity arrow icon goes here -->
+            </div>
+            <div class="activity">
+                <img src="images/member-3.jpg" alt="member image" class="member-img">
+                <p class="activity-info">
+                    Dawn Wood commented on Facebook's Changes for 2016
+                </p>
+                <span class="activity-time">5 hours ago</span>
+                <!-- activity arrow icon goes here -->
+            </div>
+            <div class="activity">
+                <img src="images/member-4.jpg" alt="member image" class="member-img">
+                <p class="activity-info">
+                    Dan Oliver posted YourApp's SEO Tips
+                </p>
+                <span class="activity-time">1 day ago</span>
+                <!-- activity arrow icon goes here -->
+            </div>
+        </div>
+
+        <div class="message">
+            <span class="section-title">Message User</span>
+            <div class="message-form">
+                <form action="#">
+                    <input type="text" class="user-search" placeholder="Search for User">
+                    <textarea name="user_message" class="user-message" placeholder="Message for User"></textarea>
+                    <input class="btn btn-default" type="button" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <div class="setting">
+            <span class="section-title">Settings</span>
+            <div class="email-notify">
+                <p>Send Email Notifications</p>
+                <!-- switch goes in here -->
+            </div>
+            <div class="profile-view">
+                <p>Set Profile to Public</p>
+                <!-- switch goes in here -->
+            </div>
+            <form class="timezone">
+                <select name="timezone" id="timezone">
+                    <option value="select_timeone">Select Timezone</option>
+                    <option value="gmt">GMT</option>
+                    <option value="est">EST</option>
+                </select>
+                <input class="btn btn-default" type="button" value="save">
+                <input class="btn btn-abort" type="button" value="cancel">
             </form>
         </div>
-    </div>
-
-    <div class="setting">
-        <span class="section-title">Settings</span>
-        <div class="email-notify">
-            <p>Send Email Notifications</p>
-            <!-- switch goes in here -->
-        </div>
-        <div class="profile-view">
-            <p>Set Profile to Public</p>
-            <!-- switch goes in here -->
-        </div>
-        <form class="timezone">
-            <select name="timezone" id="timezone">
-                <option value="select_timeone">Select Timezone</option>
-                <option value="gmt">GMT</option>
-                <option value="est">EST</option>
-            </select>
-            <input class="btn btn-default" type="button" value="save">
-            <input class="btn btn-abort" type="button" value="cancel">
-        </form>
     </div>
 </main>
 
