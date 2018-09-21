@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
 .ct-label {
   fill: rgba(0, 0, 0, 0.4);
   color: rgba(0, 0, 0, 0.4);
@@ -666,3 +667,76 @@
     border: 2px solid;
     border-radius: 20px;
     transition: all 0.3s ease-in 0s; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  font-family: Montserrat , sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border-radius: 50%;
+  width: 100%; }
+
+.main-header {
+  background-color: #7f5bbf;
+  width: 100%;
+  padding: .5rem 1rem;
+  display: flex; }
+  @media (min-width: 769px) {
+    .main-header {
+      padding: 1rem; } }
+
+.logo {
+  float: left;
+  color: #fff;
+  font-size: 1rem;
+  margin: auto 0;
+  margin-right: auto; }
+  .logo span {
+    font-weight: 100; }
+
+.icon-bell {
+  width: 2rem;
+  fill: #fff;
+  height: 2rem;
+  margin: auto 0;
+  margin-right: 1rem; }
+  @media (min-width: 769px) {
+    .icon-bell {
+      width: 1.5rem; } }
+
+.user {
+  border-left: 1px solid #777;
+  width: 50px;
+  padding: auto 1rem; }
+  @media (min-width: 769px) {
+    .user {
+      width: 170px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around; } }
+  .user_name {
+    display: none; }
+    @media (min-width: 769px) {
+      .user_name {
+        display: inline-block;
+        color: #fff;
+        margin: auto; } }
+  .user_picture {
+    margin-left: .5rem; }
+    @media (min-width: 769px) {
+      .user_picture {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 20px; } }
