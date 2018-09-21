@@ -341,3 +341,54 @@ img {
     @media (min-width: 769px) {
       .social-info-numbers {
         font-size: 3rem; } }
+
+.members .member {
+  border-bottom: 1px solid #eee;
+  margin: 1rem 0;
+  display: flex; }
+  .members .member-img {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem; }
+  .members .member-info {
+    margin: .5rem;
+    position: relative;
+    flex: 1 50%; }
+    .members .member-info p {
+      text-align: left;
+      text-transform: capitalize; }
+    .members .member-info a {
+      display: block;
+      text-align: left;
+      margin-bottom: 1.5rem; }
+    .members .member-info span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #a7a7a7; }
+
+.activities .activity {
+  margin: 1rem 0;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  display: flex;
+  position: relative; }
+  .activities .activity .member-img {
+    width: 3rem;
+    height: 3rem; }
+  .activities .activity-info {
+    margin: .5rem;
+    color: #9e9e9e;
+    text-align: left;
+    width: 100%; }
+    .activities .activity-info span {
+      color: #6a6969;
+      margin-right: 5px;
+      font-weight: bold; }
+  .activities .activity-time {
+    display: block;
+    font-size: .7rem;
+    color: #a7a7a7;
+    position: absolute;
+    bottom: .2rem;
+    right: .2rem; }

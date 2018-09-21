@@ -1,0 +1,33 @@
+.activities{
+  .activity{
+    margin: 1rem 0;
+    border-bottom: 1px solid $color-grey;
+    padding: 1rem 0;
+    display: flex;
+    position: relative;
+    .member-img{
+      width: 3rem;
+      height: 3rem;
+    }
+    &-info{
+      margin: .5rem;
+      color: $color-text-grey;
+      text-align: left;
+      width: 100%;
+      span{
+        color: $color-dark;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+    }
+
+    &-time{
+      display: block;
+      font-size: .7rem;
+      color: $color-dark-grey;
+      position: absolute;
+      bottom: .2rem;
+      right: .2rem;
+    }
+  }
+}
