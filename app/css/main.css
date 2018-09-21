@@ -285,7 +285,7 @@ img {
   .chart {
     display: flex; }
     .chart div {
-      flex: 1;
+      flex: 1 40%;
       padding: 1rem; }
     .chart-bar {
       border-top: 1px solid #eee;
