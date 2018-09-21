@@ -9,10 +9,11 @@
       padding: 1rem;
       width: 100%;
       border: none;
-      border: 1px solid $color-dark-grey;
-      border-radius: 5px;
+      border-top: none;
+      border-left: none;
+      border-radius: 7px;
       &:focus{
-        outline: none;
+        //outline: none;
       }
       &::placeholder{
         font-size: 1rem;
@@ -37,9 +38,9 @@
 
     @media (min-width: 769px){
       float: right;
-      width: 80%;
+      width: 90%;
       border: 1px solid $color-dark-grey;
-      border-radius: 5px;
+      border-radius: 2px;
       text-align: right;
     }
 
