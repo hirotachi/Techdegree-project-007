@@ -52,4 +52,29 @@ function createDateLabels(number){
 
     return labels;
 }
-// ==============================================================
+
+
+// Notifcation==============================================================
+const $notify = $(".notification");
+const messages = ["hey i want to say something good to you", "can you add me as a friend", "your account has been deleted"];
+
+for (let i = 0; i<messages.length; i++){
+    console.log(`<li class="message"><p>${messages[i]}</p><i class="fas fa-times"></i></li>`);
+}
+
+$(".icon-bell").on("click", function(e){
+    $notify.append(`<ul class="messages"></ul>`);
+    for (let i = 0; i<messages.length; i++){
+        $(".messages").append(`<li class="message">${messages[i]}<i class="fas fa-times"></i></li>`);
+    }
+    $(".notify").remove();
+});
+
+$(".notification").on("click", ".message i", function(){
+    if($(".messages").children().length < 2){
+        $(".messages").remove();
+    }else{
+    $(this).parent().remove();
+    }
+
+});

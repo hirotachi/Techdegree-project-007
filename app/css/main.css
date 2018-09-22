@@ -25,6 +25,7 @@
   display: inline-block;
   border-radius: 5px;
   border: none;
+  margin: 1rem 0;
   cursor: pointer;
   text-transform: uppercase;
   color: #fff;
@@ -77,8 +78,19 @@
     width: 80%;
     color: #a7a7a7;
     margin-bottom: 1rem; }
+    @media (min-width: 769px) {
+      .email-notify p, .profile-view p {
+        width: 50%; } }
   .email-notify .ui-switcher, .profile-view .ui-switcher {
     margin: 0 auto; }
+    @media (min-width: 769px) {
+      .email-notify .ui-switcher, .profile-view .ui-switcher {
+        width: 54px;
+        height: 28px; }
+        .email-notify .ui-switcher::before, .profile-view .ui-switcher::before {
+          top: 9px; }
+        .email-notify .ui-switcher::after, .profile-view .ui-switcher::after {
+          top: 5px; } }
 
 #timezone {
   color: #a7a7a7;
@@ -90,12 +102,12 @@
   width: 3rem;
   height: 3rem;
   margin-right: .5rem;
-  position: relative;
-  cursor: pointer; }
+  position: relative; }
   .notification svg {
     width: 2rem;
     height: 3.5rem;
-    fill: #fff; }
+    fill: #fff;
+    cursor: pointer; }
   .notification .notify {
     display: inline-block;
     width: 10px;
@@ -105,6 +117,25 @@
     position: absolute;
     right: .3rem;
     top: .3rem; }
+  .notification .messages {
+    background-color: #fbfbfb;
+    width: 15rem;
+    border-radius: 10px;
+    padding: 1rem;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column; }
+    .notification .messages .message {
+      padding: 1rem 0;
+      display: flex;
+      border-bottom: 1px solid #eee; }
+      .notification .messages .message p {
+        margin-right: 1rem; }
+      .notification .messages .message i {
+        cursor: pointer; }
 
 * {
   box-sizing: border-box;

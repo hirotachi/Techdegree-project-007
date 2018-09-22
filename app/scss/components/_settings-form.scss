@@ -8,9 +8,22 @@
     width: 80%;
     color: $color-dark-grey;
     margin-bottom: 1rem;
+    @media(min-width: 769px){
+      width: 50%;
+    }
   }
   .ui-switcher{
     margin: 0 auto;
+    @media (min-width: 769px){
+      width: 54px;
+      height: 28px;
+      &::before{
+        top: 9px;
+      }
+      &::after{
+        top: 5px;
+      }
+    }
   }
 }
 
