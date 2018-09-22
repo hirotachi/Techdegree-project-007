@@ -3,3 +3,15 @@
     padding: 0 1rem;
   }
 }
+
+.flex-wrapper{
+  @media (min-width: 769px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    &>div{
+      border: 1px solid $color-grey;
+      padding: 0 1rem;
+    }
+  }
+}

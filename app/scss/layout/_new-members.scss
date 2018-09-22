@@ -1,12 +1,15 @@
 .members{
+  @media (min-width: 769px){
+  }
   .member{
     border-bottom: 1px solid $color-grey;
     margin: 1rem 0;
     display: flex;
+    @media (min-width: 769px){
+      height: 4rem;
+    }
     &-img{
-      width: 3rem;
-      height: 3rem;
-      margin: .5rem;
+      @extend %imageholder;
     }
 
     &-info{
