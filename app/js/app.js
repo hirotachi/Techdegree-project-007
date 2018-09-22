@@ -10,7 +10,7 @@ $filterList.on("click"," li", function(e){
     new Chart(line, {
     type: 'line',
     data: {
-        labels: createDateLabels(7, 'days', 11),
+        labels: createDateLabels(11),
         datasets: [{
             backgroundColor: 'rgba(115, 119, 191, 0.2)',
             borderColor: 'rgba(115, 119, 191, 1)',
@@ -46,8 +46,14 @@ function createRandomData(min, max, enteries)  {
 
 function createDateLabels(number){
     let labels = [];
+    let current = 7;
     for (let i = 1; i< number; i++){
-        labels.push("label");
+        labels.push(`${current}-${current+6}`);
+        if(current < 31){
+            current += 6;
+        }else{
+            current = 6;
+        }
     }
 
     return labels;
@@ -58,18 +64,22 @@ function createDateLabels(number){
 const $notify = $(".notification");
 const messages = ["hey i want to say something good to you", "can you add me as a friend", "your account has been deleted"];
 
-for (let i = 0; i<messages.length; i++){
-    console.log(`<li class="message"><p>${messages[i]}</p><i class="fas fa-times"></i></li>`);
-}
-
+// add list of messages on icon-bell click
 $(".icon-bell").on("click", function(e){
-    $notify.append(`<ul class="messages"></ul>`);
-    for (let i = 0; i<messages.length; i++){
-        $(".messages").append(`<li class="message">${messages[i]}<i class="fas fa-times"></i></li>`);
+    if($(".messages").length < 1){
+        $notify.append(`<ul class="messages"></ul>`);
+        for (let i = 0; i<messages.length; i++){
+            $(".messages").append(`<li class="message">${messages[i]}<i class="fas fa-times"></i></li>`);
+        }
+        $(".messages").hide();
+        $(".notify").remove();
+        $(".messages").slideDown();
+    }else{
+        $(".messages").slideToggle();
     }
-    $(".notify").remove();
+    
 });
-
+// remove list item on X click if there is only one list item left remove list from document
 $(".notification").on("click", ".message i", function(){
     if($(".messages").children().length < 2){
         $(".messages").remove();
@@ -78,3 +88,16 @@ $(".notification").on("click", ".message i", function(){
     }
 
 });
+
+// add selected class to clicked sidebar option
+$(".sidebar").on("click", "svg", function(){
+    $(".sidebar svg").removeClass("selected");
+    $(this).addClass("selected");
+});
+
+// ==========================================================
+// remove alert box when the X is clicked
+$(".dashboard_alert").on("click", "i", function(){
+    $(".dashboard_alert").slideUp();
+});
+// =========================================================

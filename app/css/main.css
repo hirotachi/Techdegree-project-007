@@ -35,7 +35,8 @@
   .btn-lg {
     width: 90%; }
   .btn-md {
-    width: 40%; }
+    width: 40%;
+    margin: 1rem; }
   .btn-default {
     background-color: #7f5bbf; }
     .btn-default:hover {
@@ -45,12 +46,21 @@
     .btn-abort:hover {
       background-color: #6a6969; }
 
+.selected {
+  opacity: 1 !important;
+  fill: #6ed78f !important; }
+  @media (min-width: 769px) {
+    .selected {
+      border-left: 3px solid #6ed78f;
+      fill: #fff !important; } }
+
 .section-title {
   display: block;
   width: 100%;
   margin: 1rem 0;
   color: #9e9e9e;
   text-align: center;
+  text-transform: uppercase;
   font-size: 1.3rem; }
   @media (min-width: 769px) {
     .section-title {
@@ -68,7 +78,10 @@
       width: 45%; } }
 
 .user-message {
-  height: 5rem; }
+  height: 5.7rem; }
+
+.messaging {
+  padding: 0 1rem; }
 
 .email-notify, .profile-view {
   text-align: left;
@@ -183,7 +196,7 @@ img {
   display: flex; }
   @media (min-width: 769px) {
     .main-header {
-      padding: 1rem; } }
+      padding: .5rem; } }
 
 .logo {
   float: left;
@@ -218,7 +231,7 @@ img {
         display: inline-block;
         width: 2rem;
         height: 2rem;
-        margin-left: 20px; } }
+        margin: auto; } }
 
 .sidebar {
   background-color: #5a3a94;
@@ -233,9 +246,8 @@ img {
     width: 3rem;
     height: 3rem;
     padding: .7rem 1rem;
+    opacity: .6;
     cursor: pointer; }
-    .sidebar svg:hover {
-      fill: #96e2ae; }
     @media (min-width: 769px) {
       .sidebar svg {
         width: 4rem;

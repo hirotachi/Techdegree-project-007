@@ -23,6 +23,7 @@
   }
   &-md{
     width: 40%;
+    margin: 1rem;
   }
   &-default{
     background-color: $color-primary;
@@ -37,5 +38,13 @@
       background-color: $color-dark;
     }
   }
+}
 
+.selected{
+  opacity: 1 !important;
+  fill: $color-secondary !important;
+  @media (min-width: 769px){
+    border-left: 3px solid $color-secondary;
+    fill: $color-white !important;
+  }
 }

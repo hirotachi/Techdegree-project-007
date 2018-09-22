@@ -4,7 +4,11 @@
   }
   &-message{
     @extend %formholder;
-    height: 5rem;
+    height: 5.7rem;
   }
+}
+
+.messaging{
+  padding: 0 1rem;
 }
 

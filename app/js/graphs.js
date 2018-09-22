@@ -3,7 +3,7 @@ const line = document.getElementById("trafficChart");
 const myChart = new Chart(line, {
     type: 'line',
     data: {
-        labels: createDateLabels(7, 'days', 11),
+        labels: createDateLabels(11),
         datasets: [{
             backgroundColor: 'rgba(115, 119, 191, 0.2)',
             borderColor: 'rgba(115, 119, 191, 1)',
@@ -39,8 +39,14 @@ function createRandomData(min, max, enteries)  {
 
 function createDateLabels(number){
     let labels = [];
+    let current = 7;
     for (let i = 1; i< number; i++){
-        labels.push("label");
+        labels.push(`${current}-${current+6}`);
+        if(current < 31){
+            current += 6;
+        }else{
+            current = 6;
+        }
     }
 
     return labels;

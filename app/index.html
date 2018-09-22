@@ -24,18 +24,18 @@
         <img class="user_picture" src="images/member-2.jpg" alt="memeber picture">
     </div>
 </header>
-<div class="flex-container">
+<div class="flex-container" id="flexer">
     <div class="sidebar">
-        <svg class="icon-dashboard">
+        <svg class="icon-dashboard selected" id="dashboard">
             <use xlink:href="icons/test.svg#icon-dashboard">
         </svg>
-        <svg class="icon-members">
+        <svg class="icon-members" id="members">
             <use xlink:href="icons/test.svg#icon-members">
         </svg>
-        <svg class="icon-visits">
+        <svg class="icon-visits" id="traffic">
             <use xlink:href="icons/test.svg#icon-visits">
         </svg>
-        <svg class="icon-settings">
+        <svg class="icon-settings" id="setting">
             <use xlink:href="icons/test.svg#icon-settings">
         </svg>
     </div>
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="chart">
+            <div class="chart" id="charts">
                 <div class="chart-bar">
                     <span class="section-title">Daily Traffic</span>
                     <!-- column chart going in here -->
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="social">
+            <div class="social" id="social">
                 <span class="section-title">Social stats</span>
                 <div class="social-stats">
                     <div class="social-twitter">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         <div class="grid-wrapper">
-            <div class="members">
+            <div class="members" id="members">
                 <span class="section-title">new members</span>
                 <div class="member">
                     <img src="images/member-1.jpg" alt="member image" class="member-img">
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="activities">
+            <div class="activities" id="activities">
                 <span class="section-title">recent activity</span>
                 <div class="activity">
                     <img src="images/member-1.jpg" alt="member image" class="member-img">
@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="message">
+            <div class="messaging" id="messaging">
                 <span class="section-title">Message User</span>
                 <div class="message-form">
                     <form action="#">
@@ -198,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="setting">
+            <div class="setting" id="setting">
                 <span class="section-title">Settings</span>
                 <div class="email-notify">
                     <p>Send Email Notifications</p>

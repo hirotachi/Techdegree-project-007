@@ -12,10 +12,8 @@
     width: 3rem;
     height: 3rem;
     padding: .7rem 1rem;
+    opacity: .6;
     cursor: pointer;
-    &:hover{
-      fill: $color-secondary-light;
-    }
 
     @media (min-width: 769px){
       width: 4rem;
