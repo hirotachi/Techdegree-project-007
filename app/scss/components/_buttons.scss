@@ -32,6 +32,9 @@
 
   &-abort{
     background-color: $color-dark-grey;
+    &:hover{
+      background-color: $color-dark;
+    }
   }
 
 }

@@ -1,12 +1,16 @@
 
 
 .email-notify, .profile-view{
-  text-align: center;
-  margin: 1rem 0;
+  text-align: left;
+  margin: 1rem;
   p{
     display: inline-block;
+    width: 80%;
     color: $color-dark-grey;
     margin-bottom: 1rem;
+  }
+  .ui-switcher{
+    margin: 0 auto;
   }
 }
 
@@ -17,4 +21,8 @@
   option{
     color: $color-black;
   }
+}
+
+.setting{
+  margin: 1rem 0;
 }
