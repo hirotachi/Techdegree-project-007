@@ -209,8 +209,7 @@ img {
 
 .user {
   border-left: 1px solid #a7a7a7;
-  width: 50px;
-  padding: auto 1rem; }
+  width: 50px; }
   @media (min-width: 769px) {
     .user {
       width: 170px;
