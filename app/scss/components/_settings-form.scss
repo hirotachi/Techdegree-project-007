@@ -1,0 +1,20 @@
+
+
+.email-notify, .profile-view{
+  text-align: center;
+  margin: 1rem 0;
+  p{
+    display: inline-block;
+    color: $color-dark-grey;
+    margin-bottom: 1rem;
+  }
+}
+
+#timezone{
+  @extend %formholder;
+  color: $color-dark-grey;
+  width: 90%;
+  option{
+    color: $color-black;
+  }
+}

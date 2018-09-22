@@ -200,13 +200,15 @@
                 <p>Send Email Notifications</p>
                 <!-- switch goes in here -->
             </div>
+
             <div class="profile-view">
                 <p>Set Profile to Public</p>
                 <!-- switch goes in here -->
             </div>
+
             <form class="timezone">
                 <select name="timezone" id="timezone">
-                    <option value="select_timeone">Select Timezone</option>
+                    <option value="" disabled selected>Select Timezone</option>
                     <option value="gmt">GMT</option>
                     <option value="est">EST</option>
                 </select>
@@ -218,6 +220,7 @@
 </main>
 
 <!--scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <script src="js/graphs.js"></script>
 <script src="js/app.js"></script>

@@ -1,0 +1,10 @@
+.user{
+  &-search{
+    @extend %formholder;
+  }
+  &-message{
+    @extend %formholder;
+    height: 5rem;
+  }
+}
+
