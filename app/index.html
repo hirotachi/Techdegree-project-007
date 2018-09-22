@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Dashboard</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -26,16 +26,16 @@
 </header>
 <div class="flex-container" id="flexer">
     <div class="sidebar">
-        <svg class="icon-dashboard selected" id="dashboard">
+        <svg class="icon-dashboard selected">
             <use xlink:href="icons/test.svg#icon-dashboard">
         </svg>
-        <svg class="icon-members" id="members">
+        <svg class="icon-members">
             <use xlink:href="icons/test.svg#icon-members">
         </svg>
-        <svg class="icon-visits" id="traffic">
+        <svg class="icon-visits">
             <use xlink:href="icons/test.svg#icon-visits">
         </svg>
-        <svg class="icon-settings" id="setting">
+        <svg class="icon-settings">
             <use xlink:href="icons/test.svg#icon-settings">
         </svg>
     </div>
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="activities" id="activities">
+            <div class="activities">
                 <span class="section-title">recent activity</span>
                 <div class="activity">
                     <img src="images/member-1.jpg" alt="member image" class="member-img">
@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="messaging" id="messaging">
+            <div class="messaging">
                 <span class="section-title">Message User</span>
                 <div class="message-form">
                     <form action="#">
@@ -198,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="setting" id="setting">
+            <div class="setting">
                 <span class="section-title">Settings</span>
                 <div class="email-notify">
                     <p>Send Email Notifications</p>
@@ -213,7 +213,7 @@
                 </div>
 
                 <form class="timezone">
-                    <select name="timezone" id="timezone">
+                    <select name="timezone" >
                         <option value="" disabled selected>Select Timezone</option>
                         <option value="gmt">GMT</option>
                         <option value="est">EST</option>
