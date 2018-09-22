@@ -1,0 +1,21 @@
+%formholder{
+  padding: 1rem;
+  width: 100%;
+  background-color: $color-social-bg;
+  border: 1px solid $color-grey;
+  border-radius: 5px;
+  margin: .5rem 0;
+  &::placeholder{
+    color: $color-dark-grey;
+  }
+}
+
+.user{
+  &-search{
+    @extend %formholder;
+  }
+  &-message{
+    @extend %formholder;
+    height: 5rem;
+  }
+}
